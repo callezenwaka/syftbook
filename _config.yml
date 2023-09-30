@@ -1,14 +1,22 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
+title: Openmined Documentation
 author: The Jupyter Book Community
-logo: logo.png
+logo: logo.jpg
+
+# Short description about the book
+description: >-
+  A brief introduction to Python programming for scientific applications.
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
+
+# HTML-specific settings
+html:
+  home_page_in_navbar         : true
 
 # Define the name of the latex output file for PDF builds
 latex:
