@@ -33,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/style.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -64,6 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
   <script src="_static/searchtools.js"></script>
   <script src="_static/language_data.js"></script>
   <script src="searchindex.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="#" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -118,6 +120,12 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">This documentation page is in test mode.</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -140,7 +148,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="docs/intro.html">
   
   
   
@@ -150,8 +158,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/openmined.svg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/openmined.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -160,18 +168,19 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
+                <a class="reference internal" href="docs/intro.html">
                     Welcome to your Jupyter Book
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mymarkdownfile.html">Here’s my sample title</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebook_syft.html">Hello Dark Theme</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python.html">An Introductory Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/week_0.html">OP<sup>3</sup> - OpenMined PySyft Padawan Program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/week_1.html">Motivations for Remote Data Science - Session 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/week_2.html">Setting up Syft for Development - Session 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/week_3.html">The Architecture of Syft and Grid - Session 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/week_4.html">RPC, Pointers and Computational Graphs - Session 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/week_5.html">HAGrid, Provisioning and Deployment - Session 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/week_6.html">Try Syft</a></li>
 </ul>
 
     </div>
@@ -226,7 +235,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/callezenwaka/syftbook" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -243,7 +252,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/callezenwaka/syftbook/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -363,28 +372,56 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By The Openmined Community
 </p>
 
   </div>
   
   <div class="footer-item">
     
-  <p class="copyright">
+  </div>
+  
+  <div class="footer-item">
     
-      © Copyright 2022.
-      <br/>
+  </div>
+  
+  <div class="footer-item">
     
-  </p>
+<div class="extra_footer">
+  <div id="footer-links">
+  <div class="container-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="footer-container column small-12 xlarge-10 xlarge-offset-1">
+          <ul class="footer-items">
+            <li class="logo">
+              <a href="/"><img src="/_static/image/openmined.svg" alt="OpenMined" /></a>
+            </li>
+            <li><a href="https://blog.openmined.org" target="_blank" rel="noopener noreferrer">Blog</a></li>
+            <li><a href="https://store.openmined.org" target="_blank" rel="noopener noreferrer">Store</a></li>
+            <li><a href="/_static/pdf/openmined-brand-guide.pdf" target="_blank" rel="noopener noreferrer">Brand Guide</a></li>
+          </ul>
+          <ul class="social-media">
+            <li>
+              <a href="https://github.com/OpenMined" target="_blank" rel="noopener noreferrer"><img class="icon" src="/_static/image/github.svg" alt="github" /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/openminedorg" target="_blank" rel="noopener noreferrer"><img class="icon" src="/_static/image/twitter.svg" alt="twitter" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/c/OpenMinedOrg" target="_blank" rel="noopener noreferrer"><img class="icon" src="/_static/image/youtube.svg" alt="youtube" /></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/openminedorg/" target="_blank" rel="noopener noreferrer"><img class="icon" src="/_static/image/facebook.svg" alt="facebook" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-  <div class="footer-item">
-    
+</div>
   </div>
   
 </div>
