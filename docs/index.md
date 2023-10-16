@@ -1,4 +1,6 @@
-# Welcome to your Jupyter Book
+# Openmined Foundations
+
+## A community learning resource for Python-based computing in the geosciences
 
 This is a small sample book to give you a feel for how book content is
 structured.

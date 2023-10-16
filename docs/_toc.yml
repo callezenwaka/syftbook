@@ -1,0 +1,56 @@
+format: jb-book
+root: index
+parts:
+  - caption: Introduction
+    maxdepth: 2
+    chapters:
+      - file: preamble/overview
+      - file: preamble/how-to-use
+      - file: preamble/how-to-cite
+  - caption: Basics
+    maxdepth: 2
+    chapters:
+      - file: basics/overview
+      - file: basics/why-python
+        sections:
+          - file: basics/environment
+            sections:
+              - file: basics/configuration
+              - file: basics/terminal
+              - file: basics/jupyter
+              - file: basics/conda
+      - file: basics/getting-started-jupyter
+        sections:
+          - file: basics/quickstart
+  - caption: Advanced
+    maxdepth: 2
+    chapters:
+      - file: advanced/overview
+      - file: advanced/numpy
+      - file: advanced/pandas
+      - file: advanced/matplotlib
+        sections:
+          - file: advanced/matplotlib/matplotlib
+  - caption: Use Cases
+    maxdepth: 2
+    chapters:
+      - file: usage/overview
+      - file: usage/use-cases
+      - file: usage/templates
+        sections:
+          - file: usage/template/syft
+  - caption: Partners
+    maxdepth: 2
+    chapters:
+      - file: partners/overview
+      - file: partners/our-partners
+  - caption: Troubleshooting
+    maxdepth: 2
+    chapters:
+      - file: troubleshooting/overview
+      - file: troubleshooting/error-codes
+  - caption: Contribute
+    maxdepth: 2
+    chapters:
+      - file: contribute/overview
+      - file: contribute/padawan
