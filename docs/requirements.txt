@@ -202,6 +202,7 @@ snowballstemmer==2.2.0
 soupsieve==2.4.1
 Sphinx==4.5.0
 sphinx-book-theme>=0.1.7
+sphinx-book-theme==0.4.0rc1
 sphinx-pythia-theme==2022.3.29
 sphinx-comments==0.0.3
 sphinx-copybutton==0.5.2
