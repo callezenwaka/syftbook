@@ -177,7 +177,7 @@ python-dotenv==1.0.0
 python-json-logger==2.0.7
 pytz==2023.3
 PyYAML==6.0
-pyzmq==23.2.1
+pyzmq==25.1.0
 recordlinkage==0.15
 redis==4.5.5
 regex==2023.6.3
