@@ -84,7 +84,7 @@ json5==0.9.14
 jsonpointer==2.3
 jsonschema>=3.2.0
 jupyter-book==0.13.1
-jupyter-cache==0.6.1
+jupyter-cache~=0.4.1
 jupyter-events==0.6.3
 jupyter-lsp==2.2.0
 jupyter_client==8.2.0
