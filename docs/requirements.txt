@@ -83,7 +83,7 @@ joblib==1.3.2
 json5==0.9.14
 jsonpointer==2.3
 jsonschema==4.17.3
-jupyter-book==0.14.0
+jupyter-book==0.15.0
 jupyter-cache==0.6.1
 jupyter-events==0.6.3
 jupyter-lsp==2.2.0
@@ -202,7 +202,6 @@ snowballstemmer==2.2.0
 soupsieve==2.4.1
 Sphinx==4.5.0
 sphinx-book-theme>=0.1.7
-sphinx-book-theme==0.4.0rc1
 sphinx-pythia-theme==2022.3.29
 sphinx-comments==0.0.3
 sphinx-copybutton==0.5.2
