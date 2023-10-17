@@ -69,7 +69,7 @@ idna==3.4
 imagesize==1.4.1
 importlib-metadata==6.8.0
 ipykernel==6.23.1
-ipython==8.14.0
+ipython
 isoduration==20.11.0
 itables==1.5.3
 jax==0.4.10
