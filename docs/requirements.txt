@@ -132,7 +132,7 @@ nvidia-cusolver-cu11==11.4.0.1
 nvidia-cusparse-cu11==11.7.4.91
 nvidia-nccl-cu11==2.14.3
 nvidia-nvtx-cu11==11.7.91
-opendp==0.8.0
+opendp==0.7.0
 opentelemetry-api==1.14.0
 opentelemetry-exporter-jaeger==1.14.0
 opentelemetry-exporter-jaeger-proto-grpc==1.14.0
