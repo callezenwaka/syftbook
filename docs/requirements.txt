@@ -184,7 +184,7 @@ regex==2023.6.3
 requests==2.31.0
 resolvelib==1.0.1
 responses==0.18.0
-RestrictedPython==6.1
+RestrictedPython==6.0
 result==0.10.0
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
