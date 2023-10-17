@@ -96,7 +96,7 @@ jupyterlab-pygments==0.2.2
 jupyterlab_server==2.22.1
 kiwisolver==1.4.4
 latexcodec==2.0.1
-linkify-it-py==2.0.2
+linkify-it-py==1.0.1
 lit==16.0.6
 loguru==0.7.0
 markdown-it-py==2.2.0
