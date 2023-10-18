@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
+title: Syft Documentation
 logo: _images/logo-light.svg
 author: The Openmined Community
 copyright: "2022"  # Copyright year to be placed in the footer
@@ -40,84 +40,11 @@ latex:
 bibtex_bibfiles:
   - references.bib
 
-# disable the “copyright” text that is automatically added to each footer
-# sphinx:
-#   config:
-#     html_show_copyright: false
-#     html_theme_options:
-#       extra_navbar: <h2>This documentation page is in test mode.</h2>
-#       extra_footer: <h3>This documentation page is in test mode.</h3>
-
-# define constants
-constants:
-  ROOT_URL: http://127.0.0.1:5500/syftbook/docs/_build/html
-
-sphinx:
-  config:
-    nb_execution_raise_on_error: true # raise exception in build if there are notebook errors (this flag is ignored if building on binder)
-    linkcheck_request_headers:
-      'https://docs.github.com/':
-        User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:24.0) Gecko/20100101 Firefox/24.0
-    html_favicon: _static/image/favicon.ico
-    html_last_updated_fmt: '%-d %B %Y'
-    html_theme: sphinx_pythia_theme
-    html_permalinks_icon: '<i class="fas fa-link"></i>'
-    html_theme_options:
-      # google_analytics_id: 'G-G57FLM9M46'
-      home_page_in_toc: true
-      repository_url: https://github.com/callezenwaka/syftbook # Online location of your book
-      repository_branch: main # Which branch of the repository should be used when creating links (optional)
-      use_issues_button: true
-      use_repository_button: true
-      use_edit_page_button: true
-      github_url: https://github.com/OpenMined
-      twitter_url: https://twitter.com/openminedorg
-      icon_links:
-        - name: YouTube
-          url: https://www.youtube.com/c/OpenMinedOrg
-          icon: fab fa-youtube-square
-          type: fontawesome
-      launch_buttons:
-        binderhub_url: https://binder.projectpythia.org
-        notebook_interface: jupyterlab
-      extra_navbar: |
-        We want your feedback! Check our <a href="/_static/pdf/openmined-brand-guide.pdf">Contributor's Guide</a>.
-      logo_link: https://projectpythia.org
-      navbar_links:
-        - name: Home
-          url: https://openmined.org
-        - name: Documentation
-          url: http://127.0.0.1:5500/syftbook/docs/_build/html
-        - name: Use cases
-          url: http://127.0.0.1:5500/syftbook/docs/_build/html/usage/overview.html
-        - name: Partners
-          url: http://127.0.0.1:5500/syftbook/docs/_build/html/partners/overview.html
-        - name: Contribute
-          url: http://127.0.0.1:5500/syftbook/docs/_build/html/contribute/overview.html
-        - name: Blog
-          url: https://blog.openmined.org/
-        - name: Community
-          url: https://slack.openmined.org/
-      # footer_logos:
-        # NCAR: images/logos/NCAR-contemp-logo-blue.svg
-        # Unidata: images/logos/Unidata_logo_horizontal_1200x300.svg
-        # UAlbany: images/logos/UAlbany-A2-logo-purple-gold.svg
-
-#######################################################################################
-# Launch button settings
-# launch_buttons:
-#   notebook_interface        : classic  # The interface interactive links will activate ["classic", "jupyterlab"]
-#   binderhub_url             : ""  # The URL of the BinderHub (e.g., https://mybinder.org)
-#   jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
-#   thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
-#   colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
-
-
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
+  url: https://github.com/callezenwaka/syftbook  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
