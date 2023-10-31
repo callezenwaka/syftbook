@@ -3,3 +3,5 @@ matplotlib
 numpy
 pandas
 pythia-datasets
+sphinx-syft-theme
+sphinx

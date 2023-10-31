@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>NumPy Basics &#8212; Syft Documentation</title>
   
@@ -30,7 +30,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-syft-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
@@ -72,14 +72,10 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="31 October 2023"/>
   </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="132">
   
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
-  
-  
-  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
 
@@ -113,8 +109,8 @@ const thebe_selector_output = ".output, .cell_output"
          class="form-control"
          name="q"
          id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
+         placeholder="Search..."
+         aria-label="Search..."
          autocomplete="off"
          autocorrect="off"
          autocapitalize="off"
@@ -124,24 +120,15 @@ const thebe_selector_output = ".output, .cell_output"
   </div>
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
   
-  <div class="bd-container">
-    <div class="bd-container__inner bd-page-width">
-      
-      <div class="bd-sidebar-primary bd-sidebar">
-        
-
   
-  <div class="sidebar-header-items sidebar-primary__section">
+  <div class="col-lg-3 navbar-header-items__start">
     
-    
-    
-    
-  </div>
-  
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
+      <div class="navbar-item">
   
 
 <a class="navbar-brand logo" href="index.html">
@@ -159,16 +146,192 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><ul id="navbar-main-elements" class="navbar-nav">
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://openmined.org">Home</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://openmined.org">Getting Started</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://openmined.org">Deployment</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://openmined.org">Tutorials</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://openmined.org">Padawan</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://blog.openmined.org">Blog</a>
+  </li>
+  
+  
+</ul></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><ul id="navbar-main-elements" class="navbar-nav">
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://openmined.org">Home</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://openmined.org">Getting Started</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://openmined.org">Deployment</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://openmined.org">Tutorials</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://openmined.org">Padawan</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://blog.openmined.org">Blog</a>
+  </li>
+  
+  
+</ul></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="index.html">
-                    Welcome to your Jupyter Book
-                </a>
-            </li>
-        </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
@@ -215,53 +378,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/callezenwaka/syftbook" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="btn__text-container">Repository</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/callezenwaka/syftbook/issues/new?title=Issue%20on%20page%20%2Fnumpy-basics.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="btn__text-container">Open issue</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -407,9 +523,9 @@ document.write(`
                   
   <p><a class="reference internal" href="https://github.com/numpy/numpy/raw/main/branding/logo/primary/numpylogo.svg"><img alt="NumPy Logo" src="https://github.com/numpy/numpy/raw/main/branding/logo/primary/numpylogo.svg" width="250" /></a></img></p>
 <section class="tex2jax_ignore mathjax_ignore" id="numpy-basics">
-<h1>NumPy Basics<a class="headerlink" href="#numpy-basics" title="Permalink to this heading">#</a></h1>
+<h1>NumPy Basics<a class="headerlink" href="#numpy-basics" title="Permalink to this heading"><i class="fas fa-link"></i></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"><i class="fas fa-link"></i></a></h2>
 <p>NumPy is the fundamental package for scientific computing with Python. It contains among other things:</p>
 <ul class="simple">
 <li><p>a powerful N-dimensional array object</p></li>
@@ -424,7 +540,7 @@ document.write(`
 </ol>
 </section>
 <section id="imports">
-<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
+<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading"><i class="fas fa-link"></i></a></h2>
 <p>A common convention you might encounter is to rename <code class="docutils literal notranslate"><span class="pre">numpy</span></code> to <code class="docutils literal notranslate"><span class="pre">np</span></code> on import to shorten it for the many times we will be calling on <code class="docutils literal notranslate"><span class="pre">numpy</span></code> for functionality.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -435,7 +551,7 @@ document.write(`
 </div>
 </section>
 <section id="create-an-array-of-data">
-<h2>Create an array of ‘data’<a class="headerlink" href="#create-an-array-of-data" title="Permalink to this heading">#</a></h2>
+<h2>Create an array of ‘data’<a class="headerlink" href="#create-an-array-of-data" title="Permalink to this heading"><i class="fas fa-link"></i></a></h2>
 <p>The NumPy array represents a <em>contiguous</em> block of memory, holding entries of a given type (and hence fixed size). The entries are laid out in memory according to the shape, or list of dimension sizes. Let’s start by creating an array from a list of integers and taking a look at it,</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -541,14 +657,14 @@ document.write(`
 </div>
 <p>And as before we can use <code class="docutils literal notranslate"><span class="pre">ndim</span></code>, <code class="docutils literal notranslate"><span class="pre">shape</span></code>, and <code class="docutils literal notranslate"><span class="pre">dtype</span></code> to discover how many dimensions of what lengths are making up our array of floats.</p>
 <section id="generation">
-<h3>Generation<a class="headerlink" href="#generation" title="Permalink to this heading">#</a></h3>
+<h3>Generation<a class="headerlink" href="#generation" title="Permalink to this heading"><i class="fas fa-link"></i></a></h3>
 <p>NumPy also provides helper functions for generating arrays of data to save you typing for regularly spaced data. Don’t forget your Python indexing rules!</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">arange(start,</span> <span class="pre">stop,</span> <span class="pre">step)</span></code> creates a range of values in the interval <code class="docutils literal notranslate"><span class="pre">[start,stop)</span></code> with <code class="docutils literal notranslate"><span class="pre">step</span></code> spacing.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">linspace(start,</span> <span class="pre">stop,</span> <span class="pre">num)</span></code> creates a range of <code class="docutils literal notranslate"><span class="pre">num</span></code> evenly spaced values over the range <code class="docutils literal notranslate"><span class="pre">[start,stop]</span></code>.</p></li>
 </ul>
 <section id="arange">
-<h4>arange<a class="headerlink" href="#arange" title="Permalink to this heading">#</a></h4>
+<h4>arange<a class="headerlink" href="#arange" title="Permalink to this heading"><i class="fas fa-link"></i></a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -590,7 +706,7 @@ document.write(`
 </div>
 </section>
 <section id="linspace">
-<h4>linspace<a class="headerlink" href="#linspace" title="Permalink to this heading">#</a></h4>
+<h4>linspace<a class="headerlink" href="#linspace" title="Permalink to this heading"><i class="fas fa-link"></i></a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
@@ -668,9 +784,9 @@ document.write(`
 </section>
 </section>
 <section id="perform-calculations-with-numpy">
-<h2>Perform calculations with NumPy<a class="headerlink" href="#perform-calculations-with-numpy" title="Permalink to this heading">#</a></h2>
+<h2>Perform calculations with NumPy<a class="headerlink" href="#perform-calculations-with-numpy" title="Permalink to this heading"><i class="fas fa-link"></i></a></h2>
 <section id="arithmetic">
-<h3>Arithmetic<a class="headerlink" href="#arithmetic" title="Permalink to this heading">#</a></h3>
+<h3>Arithmetic<a class="headerlink" href="#arithmetic" title="Permalink to this heading"><i class="fas fa-link"></i></a></h3>
 <p>In core Python, that is <em>without</em> NumPy, creating sequences of values and adding them together requires writing a lot of manual loops, just like one would do in C/C++:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -797,7 +913,7 @@ document.write(`
 </div>
 </section>
 <section id="constants">
-<h3>Constants<a class="headerlink" href="#constants" title="Permalink to this heading">#</a></h3>
+<h3>Constants<a class="headerlink" href="#constants" title="Permalink to this heading"><i class="fas fa-link"></i></a></h3>
 <p>NumPy provides us access to some useful constants as well - remember you should never be typing these in manually! Other libraries such as SciPy and MetPy have their own set of constants that are more domain specific.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -852,7 +968,7 @@ document.write(`
 </div>
 </section>
 <section id="array-math-functions">
-<h3>Array math functions<a class="headerlink" href="#array-math-functions" title="Permalink to this heading">#</a></h3>
+<h3>Array math functions<a class="headerlink" href="#array-math-functions" title="Permalink to this heading"><i class="fas fa-link"></i></a></h3>
 <p>NumPy also has math functions that can operate on arrays. Similar to the math operations, these greatly simplify and speed up these operations. Let’s start with calculating <span class="math notranslate nohighlight">\(\sin(t)\)</span>!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -974,9 +1090,9 @@ document.write(`
 </section>
 </section>
 <section id="indexing-and-subsetting-arrays">
-<h2>Indexing and subsetting arrays<a class="headerlink" href="#indexing-and-subsetting-arrays" title="Permalink to this heading">#</a></h2>
+<h2>Indexing and subsetting arrays<a class="headerlink" href="#indexing-and-subsetting-arrays" title="Permalink to this heading"><i class="fas fa-link"></i></a></h2>
 <section id="indexing">
-<h3>Indexing<a class="headerlink" href="#indexing" title="Permalink to this heading">#</a></h3>
+<h3>Indexing<a class="headerlink" href="#indexing" title="Permalink to this heading"><i class="fas fa-link"></i></a></h3>
 <p>We can use integer indexing to reach into our arrays and pull out individual elements. Let’s make a toy 2-d array to explore. Here we create a 12-value <code class="docutils literal notranslate"><span class="pre">arange</span></code> and <code class="docutils literal notranslate"><span class="pre">reshape</span></code> it into a 3x4 array.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1062,7 +1178,7 @@ document.write(`
 </div>
 </section>
 <section id="slices">
-<h3>Slices<a class="headerlink" href="#slices" title="Permalink to this heading">#</a></h3>
+<h3>Slices<a class="headerlink" href="#slices" title="Permalink to this heading"><i class="fas fa-link"></i></a></h3>
 <p>Slicing syntax is written as <code class="docutils literal notranslate"><span class="pre">array[start:stop[:step]]</span></code>, where <strong>all numbers are optional</strong>.</p>
 <ul class="simple">
 <li><p>defaults:</p>
@@ -1197,7 +1313,7 @@ document.write(`
 </div>
 </section>
 <section id="multidimensional-slicing">
-<h3>Multidimensional slicing<a class="headerlink" href="#multidimensional-slicing" title="Permalink to this heading">#</a></h3>
+<h3>Multidimensional slicing<a class="headerlink" href="#multidimensional-slicing" title="Permalink to this heading"><i class="fas fa-link"></i></a></h3>
 <p>This entire syntax can be extended to each dimension of multidimensional arrays.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1319,15 +1435,15 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading"><i class="fas fa-link"></i></a></h2>
 <p>In this notebook we introduced NumPy and the <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> that is so crucial to the entirety of the scientific Python community ecosystem. We created some arrays, used some of NumPy’s own mathematical functions to manipulate them, and then introduced the world of NumPy indexing and selecting for even multi-dimensional arrays.</p>
 <section id="whats-next">
-<h3>What’s next?<a class="headerlink" href="#whats-next" title="Permalink to this heading">#</a></h3>
+<h3>What’s next?<a class="headerlink" href="#whats-next" title="Permalink to this heading"><i class="fas fa-link"></i></a></h3>
 <p>This notebook is the gateway to nearly every other Pythia resource here. This information is crucial for understanding SciPy, pandas, xarray, and more. Continue into NumPy to explore some more intermediate and advanced topics!</p>
 </section>
 </section>
 <section id="resources-and-references">
-<h2>Resources and references<a class="headerlink" href="#resources-and-references" title="Permalink to this heading">#</a></h2>
+<h2>Resources and references<a class="headerlink" href="#resources-and-references" title="Permalink to this heading"><i class="fas fa-link"></i></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="http://docs.scipy.org/doc/numpy/user/">NumPy User Guide</a></p></li>
 <li><p><a class="reference external" href="https://scipy-lectures.org/">SciPy Lecture Notes</a></p></li>
@@ -1456,7 +1572,10 @@ By The Openmined Community
   </div>
   
   <div class="footer-item">
-    
+    <p class="last-updated">
+  Last updated on 31 October 2023.
+  <br/>
+</p>
   </div>
   
   <div class="footer-item">
