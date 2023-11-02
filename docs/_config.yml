@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Syft Documentation
-logo: _images/logo-light.svg
+logo: _images/logo.svg
 author: The Openmined Community
 copyright: "2022"  # Copyright year to be placed in the footer
 email: info@openmined.org
@@ -11,6 +11,7 @@ description: This is a differential privacy toolkit. # Short description about t
 exclude_patterns:
   - README.md
   - CONTRIBUTING.md
+  - uploading_dataset.ipynb
 
 execute:
   # See https://jupyterbook.org/content/execute.html
@@ -95,7 +96,7 @@ sphinx:
       'https://docs.github.com/':
         User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:24.0) Gecko/20100101 Firefox/24.0
     html_favicon: _images/favicon.ico
-    # html_logo: _images/logo-dark.svg
+    html_logo: _images/logo.svg
     html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_syft_theme
     html_permalinks_icon: '<i class="fas fa-link"></i>'
@@ -124,21 +125,23 @@ sphinx:
       #   We want your feedback! See our <a href="https://callezenwaka/sphinx-syft-theme/how-to-contribute.html">Contributor's Guide</a>.
       # logo_link: _images/logo-dark.svg
       # logo: _images/logo-dark.svg
-      # logo:
-      #   image_light: _images/logo-dark.svg
+      logo:
+        image_light: _images/logo.svg
       #   image_dark: _images/logo-light.svg
         # text: html_title, Uncomment to try text with logo
       navbar_links:
         - name: Home
-          url: https://openmined.org
+          url: https://syftbook.readthedocs.io/
         - name: Getting Started
-          url: https://openmined.org
+          url: https://syftbook.readthedocs.io/
         - name: Deployment
-          url: https://openmined.org
+          url: https://syftbook.readthedocs.io/
         - name: Tutorials
-          url: https://openmined.org
+          url: https://syftbook.readthedocs.io/
         - name: Padawan
-          url: https://openmined.org
+          url: https://syftbook.readthedocs.io/
+        - name: Contribute
+          url: https://slack.openmined.org
         - name: Blog
           url: https://blog.openmined.org
     # html_sidebars:

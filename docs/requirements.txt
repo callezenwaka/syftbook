@@ -5,3 +5,4 @@ pandas
 pythia-datasets
 sphinx-syft-theme
 sphinx
+# -e git+https://github.com/callezenwaka/PySyft.git@99965bf98d667a12da1badd2c4bcf97b39f10f26#egg=syft&subdirectory=packages/syft
