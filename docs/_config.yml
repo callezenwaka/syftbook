@@ -13,6 +13,8 @@ exclude_patterns:
   - CONTRIBUTING.md
   - uploading_dataset.ipynb
 
+only_build_toc_files  : true
+
 execute:
   # See https://jupyterbook.org/content/execute.html
   execute_notebooks: force
@@ -103,9 +105,12 @@ sphinx:
     html_static_path:
       - _static
       - _images
+    html_css_files:
+      - css/syft.css
     html_theme_options:
       # google_analytics_id: 'G-G57FLM9M46'
       # home_page_in_toc: true
+      home_page_in_toc: False
       repository_url: https://github.com/callezenwaka/syftbook # Online location of your book
       repository_branch: main # Which branch of the repository should be used when creating links (optional)
       # use_issues_button: true
@@ -145,8 +150,9 @@ sphinx:
         - name: Blog
           url: https://blog.openmined.org
     # html_sidebars:
+    #   index: []
     #   '**':
-    #   - sbt-sidebar-nav.html
+    #   sbt-sidebar-nav.html
       # footer_logos:
       #   NCAR: images/logos/NCAR-contemp-logo-blue.svg
       #   Unidata: images/logos/Unidata_logo_horizontal_1200x300.svg
