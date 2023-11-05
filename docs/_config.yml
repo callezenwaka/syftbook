@@ -11,9 +11,9 @@ description: This is a differential privacy toolkit. # Short description about t
 exclude_patterns:
   - README.md
   - CONTRIBUTING.md
-  - uploading_dataset.ipynb
+  - NOTES.md
 
-only_build_toc_files  : true
+only_build_toc_files: true
 
 execute:
   # See https://jupyterbook.org/content/execute.html
