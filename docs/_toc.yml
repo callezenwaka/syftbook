@@ -3,10 +3,14 @@
 
 format: jb-book
 root: index
-chapters:
-# - file: markdown
-- file: notebooks
-- file: markdown-notebooks
-- file: numpy-basics
-- file: pandas-basics
-# - file: uploading_dataset
+parts:
+  - chapters:
+    - file: markdown-notebooks
+    # - file: markdown
+  - caption: Notebooks
+    chapters:
+    - file: notebooks
+    - file: notebooks/overview
+    - file: notebooks/numpy-basics
+    - file: notebooks/pandas-basics
+    - file: notebooks/dataset
