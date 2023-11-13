@@ -13,4 +13,4 @@ parts:
     - file: notebooks/overview
     - file: notebooks/numpy-basics
     - file: notebooks/pandas-basics
-    - file: notebooks/dataset
+    - file: notebooks/syft
