@@ -1,3 +1,5 @@
 NOTES.md
 docs/_build
 *.csv
+output/
+conf.py

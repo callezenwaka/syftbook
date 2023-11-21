@@ -6,6 +6,7 @@ root: index
 parts:
   - chapters:
     - file: markdown-notebooks
+    # - file: notebooks
     # - file: markdown
   - caption: Notebooks
     chapters:
@@ -13,4 +14,13 @@ parts:
     - file: notebooks/overview
     - file: notebooks/numpy-basics
     - file: notebooks/pandas-basics
-    - file: notebooks/syft
+    # - file: notebooks/syft
+    # - file: notebooks/dataset
+  - caption: Getting Started
+    chapters:
+    - file: syft
+    # - file: syft/overview
+    - file: syft/part-0
+    - file: syft/part-1
+    # - file: syft/part-2
+    # - file: syft/part-3

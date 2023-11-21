@@ -12,6 +12,8 @@ exclude_patterns:
   - README.md
   - CONTRIBUTING.md
   - NOTES.md
+  - conf.py
+  - output/
 
 only_build_toc_files: true
 
@@ -133,7 +135,7 @@ sphinx:
       logo:
         image_light: _images/logo.svg
       #   image_dark: _images/logo-light.svg
-        # text: html_title, Uncomment to try text with logo
+        text: OpenMined # Uncomment to try text with logo
       navbar_links:
         - name: Home
           url: https://syftbook.readthedocs.io/
