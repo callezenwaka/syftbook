@@ -8,13 +8,6 @@ copyright: "2022"  # Copyright year to be placed in the footer
 email: info@openmined.org
 description: This is a differential privacy toolkit. # Short description about the book
 
-exclude_patterns:
-  - README.md
-  - CONTRIBUTING.md
-  - NOTES.md
-  - conf.py
-  - output/
-
 only_build_toc_files: true
 
 execute:
@@ -26,6 +19,17 @@ execute:
   timeout: 600
   # Cells that are expected to fail (for pedagogical reasons) should set the cell tag `raises-exceptions`
   allow_errors: False
+  # execute_notebooks: "_src/*.py"
+  exclude_patterns:
+  - README.md
+  - CONTRIBUTING.md
+  - NOTES.md
+  # - conf.py
+  # - output/
+
+# execution:
+#   timeout: 600
+#   execute_notebooks: "_src/*.py"
 
 #######################################################################################
 # Parse and render settings
@@ -94,7 +98,14 @@ bibtex_bibfiles:
 #     under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY 4.0 (CC BY 4.0)</a>.
 
 sphinx:
+  # extra_extensions:
+  #   - _modules.helper_functions
+  # local_extensions:
+  #   my_module: docs/helper_functions/helper_functions.py
   config:
+    # Additional Sphinx configuration
+    # inline_code_highlight: "true"
+    # jupyter_execute_notebooks: "cache"
     nb_execution_raise_on_error: true # raise exception in build if there are notebook errors (this flag is ignored if building on binder)
     linkcheck_request_headers:
       'https://docs.github.com/':

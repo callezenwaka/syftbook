@@ -6,6 +6,8 @@ root: index
 parts:
   - chapters:
     - file: markdown-notebooks
+    - file: overview
+    # - file: _src/myfunctions
     # - file: notebooks
     # - file: markdown
   - caption: Notebooks
