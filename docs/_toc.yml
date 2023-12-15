@@ -18,12 +18,12 @@ parts:
     - file: notebooks/pandas-basics
     # - file: notebooks/syft
     # - file: notebooks/dataset
-  # - caption: Getting Started
-  #   chapters:
-  #   - file: syft
-  #   - file: syft/syft
+  - caption: Getting Started
+    chapters:
+    - file: syft
     - file: syft/overview
     - file: syft/part-0
     - file: syft/part-1
     # - file: syft/part-2
     # - file: syft/part-3
+    - file: syft/syft
