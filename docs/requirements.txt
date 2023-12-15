@@ -5,5 +5,5 @@ pandas
 pythia-datasets
 sphinx-syft-theme
 sphinx
-syft==0.8.2
+syft==0.8.3
 gdown
