@@ -22,8 +22,8 @@ parts:
   #   chapters:
   #   - file: syft
   #   - file: syft/syft
-    # - file: syft/overview
-    # - file: syft/part-0
-    # - file: syft/part-1
+    - file: syft/overview
+    - file: syft/part-0
+    - file: syft/part-1
     # - file: syft/part-2
     # - file: syft/part-3
