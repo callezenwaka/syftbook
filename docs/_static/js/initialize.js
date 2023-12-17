@@ -1,19 +1,19 @@
 // Site URL
 const { origin, pathname } = location;
 var { host, hostname, port } = new URL(origin);
+console.log('origin, pathname: ', origin, pathname);
 // const PROD_SITE_URL = `https://syftbook.readthedocs.io`
 // const DEV_SITE_URL = `http://${host}/docs/_build/html`
 // Create a URL object
 // Access the host property
 // var { hostname } = url;
-const SITE_URL = hostname === 'localhost'? `http://${host}/docs/_build/html`: `${origin + pathname}`;
-const pathSplit = pathname.split("/");
-const rootPath = origin.includes(SITE_URL) && pathSplit.length > 3 ? pathSplit.splice(1, 2).join("/") : ''
+// const pathSplit = pathname.split("/");
+// const rootPath = origin.includes(SITE_URL) && pathSplit.length > 3 ? pathSplit.splice(1, 2).join("/") : ''
+const SITE_URL = hostname === 'localhost'? `http://${host}/docs/_build/html`: `${origin}/en/latest`;
 const ROOT_URL = SITE_URL? `${SITE_URL}` : `${origin}/${rootPath}`;
 console.log('root: ', ROOT_URL);
 console.log('SITE_URL: ', SITE_URL);
-console.log('rootPath: ', rootPath);
-console.log('origin, pathname: ', origin, pathname);
+// console.log('rootPath: ', rootPath);
 
 function buildNavigation() {
   // 
