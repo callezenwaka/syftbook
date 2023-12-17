@@ -1,14 +1,12 @@
 // Site URL
 const { origin, pathname } = location;
 var { host, hostname, port } = new URL(origin);
-const PROD_SITE_URL = `https://syftbook.readthedocs.io`
-const DEV_SITE_URL = `http://${host}/docs/_build/html`
-// console.log('DEV_SITE_URL: ', DEV_SITE_URL);
-// console.log('DEV_SITE_URL: ', DEV_SITE_URL);
+// const PROD_SITE_URL = `https://syftbook.readthedocs.io`
+// const DEV_SITE_URL = `http://${host}/docs/_build/html`
 // Create a URL object
 // Access the host property
 // var { hostname } = url;
-const SITE_URL = hostname === 'localhost'? `${DEV_SITE_URL}`: `${PROD_SITE_URL}`;
+const SITE_URL = hostname === 'localhost'? `http://${host}/docs/_build/html`: `${location}`;
 const pathSplit = pathname.split("/");
 const rootPath = origin.includes(SITE_URL) && pathSplit.length > 3 ? pathSplit.splice(1, 2).join("/") : ''
 const ROOT_URL = SITE_URL? `${SITE_URL}` : `${origin}/${rootPath}`;
