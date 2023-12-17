@@ -79,10 +79,10 @@ bibtex_bibfiles:
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
-# html:
+html:
 #   favicon: images/icons/favicon.ico
 #   google_analytics_id: 'G-G57FLM9M46'
-#   home_page_in_navbar: true
+  home_page_in_navbar: false
 #   use_issues_button: true
 #   use_repository_button: true
 #   use_edit_page_button: true
@@ -99,7 +99,7 @@ bibtex_bibfiles:
 
 sphinx:
   # extra_extensions:
-  #   - _modules.helper_functions
+  #   - sphinx_tabs.tabs
   # local_extensions:
   #   my_module: docs/helper_functions/helper_functions.py
   config:
@@ -120,6 +120,8 @@ sphinx:
       - _images
     html_css_files:
       - css/syft.css
+    html_js_files:
+      - js/initialize.js
     html_theme_options:
       # google_analytics_id: 'G-G57FLM9M46'
       # home_page_in_toc: true
@@ -141,32 +143,41 @@ sphinx:
       #   notebook_interface: jupyterlab
       # extra_navbar: |
       #   We want your feedback! See our <a href="https://callezenwaka/sphinx-syft-theme/how-to-contribute.html">Contributor's Guide</a>.
-      # logo_link: _images/logo-dark.svg
+      # logo_link: https://syftbook.readthedocs.io/
       # logo: _images/logo-dark.svg
       logo:
         image_light: _images/logo.svg
-      #   image_dark: _images/logo-light.svg
         text: OpenMined # Uncomment to try text with logo
+        # image_dark: _images/logo-light.svg
       navbar_links:
         - name: Home
-          url: https://syftbook.readthedocs.io/
+          url: /index.html
         - name: Getting Started
-          url: https://syftbook.readthedocs.io/
+          url: /installations/overview.html
         - name: Deployment
-          url: https://syftbook.readthedocs.io/
+          url: /deployments/overview.html
         - name: Tutorials
-          url: https://syftbook.readthedocs.io/
+          url: /tutorials/overview.html
         - name: Padawan
-          url: https://syftbook.readthedocs.io/
+          url: /padawan/overview.html
         - name: Contribute
-          url: https://slack.openmined.org
-        - name: Blog
-          url: https://blog.openmined.org
-    # html_sidebars:
-    #   index: []
+          url: /syft/overview.html
+        # - name: Blog
+        #   url: https://blog.openmined.org
+    html_sidebars:
+      index: []
     #   '**':
     #   sbt-sidebar-nav.html
       # footer_logos:
       #   NCAR: images/logos/NCAR-contemp-logo-blue.svg
       #   Unidata: images/logos/Unidata_logo_horizontal_1200x300.svg
       #   UAlbany: images/logos/UAlbany-A2-logo-purple-gold.svg
+
+  extra_extensions:
+    # - ablog
+    # - sphinx_click.ext
+    # - sphinx_tabs.tabs
+    - sphinx_inline_tabs
+    # - sphinx.ext.autodoc
+    # - sphinx.ext.intersphinx
+    # - sphinxcontrib.bibtex

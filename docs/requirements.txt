@@ -7,3 +7,5 @@ sphinx-syft-theme
 sphinx
 syft==0.8.3
 gdown
+sphinx-tabs
+sphinx-inline-tabs

@@ -26,3 +26,19 @@
   justify-content: flex-start;
   gap: 10px;
 }
+
+.hero-background {
+  background-image: url(/static/media/bg_ball_blue.99369d5….png), url(/static/media/bg_ball_orange.8f253ea….png);
+  background-position: left 200px, right 400px;
+  background-repeat: no-repeat;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.bd-container .bd-container__inner {
+  display: flex;
+  flex-basis: content;
+}
