@@ -6,7 +6,7 @@ var { host, hostname, port } = new URL(origin);
 // Create a URL object
 // Access the host property
 // var { hostname } = url;
-const SITE_URL = hostname === 'localhost'? `http://${host}/docs/_build/html`: `${location}`;
+const SITE_URL = hostname === 'localhost'? `http://${host}/docs/_build/html`: `${origin + pathname}`;
 const pathSplit = pathname.split("/");
 const rootPath = origin.includes(SITE_URL) && pathSplit.length > 3 ? pathSplit.splice(1, 2).join("/") : ''
 const ROOT_URL = SITE_URL? `${SITE_URL}` : `${origin}/${rootPath}`;
