@@ -24,6 +24,7 @@ execute:
   - CONTRIBUTING.md
   - NOTES.md
   - serve_docs.sh
+  - initialize.js
 
 #######################################################################################
 # Parse and render settings
@@ -120,8 +121,8 @@ sphinx:
       - _images
     html_css_files:
       - css/syft.css
-    html_js_files:
-      - js/initialize.js
+    # html_js_files:
+    #   - js/initialize.js
     html_baseurl: '/'
     html_theme_options:
       path_to_docs: 'docs'
