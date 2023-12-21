@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ## For Linux/Mac
 Change directory
 ```
-cd ../docs
+cd ..
 ```
 Make script executable
 
