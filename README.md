@@ -37,6 +37,11 @@ Run the script:
 ## For windows
 Serve the Documentation:
 
+Change directory
+```
+cd docs
+```
+
 Run the following command to build
 ```
 jupyter-book build .
@@ -48,7 +53,7 @@ cd _build/html
 python -m http.server
 ```
 
-Remember to rebuild whenever changes are made to content
+Remember to rebuild whenever a change is made to content
 ```
 jupyter-book build .
 
