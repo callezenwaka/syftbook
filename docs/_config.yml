@@ -4,7 +4,7 @@
 title: Syft Documentation
 logo: _images/logo.svg
 author: The Openmined Community
-copyright: "2022"  # Copyright year to be placed in the footer
+copyright: "2023"  # Copyright year to be placed in the footer
 email: info@openmined.org
 description: This is a differential privacy toolkit. # Short description about the book
 
@@ -19,17 +19,11 @@ execute:
   timeout: 600
   # Cells that are expected to fail (for pedagogical reasons) should set the cell tag `raises-exceptions`
   allow_errors: False
-  # execute_notebooks: "_src/*.py"
   exclude_patterns:
   - README.md
   - CONTRIBUTING.md
   - NOTES.md
-  # - conf.py
-  # - output/
-
-# execution:
-#   timeout: 600
-#   execute_notebooks: "_src/*.py"
+  - serve_docs.sh
 
 #######################################################################################
 # Parse and render settings
@@ -80,6 +74,7 @@ bibtex_bibfiles:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  baseurl: '/'
 #   favicon: images/icons/favicon.ico
 #   google_analytics_id: 'G-G57FLM9M46'
   home_page_in_navbar: false
@@ -97,11 +92,16 @@ html:
 #     All code in Pythia Foundations is licensed under Apache 2.0. All other non-code content is licensed
 #     under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY 4.0 (CC BY 4.0)</a>.
 
+# Sphinx HTML options
+html_baseurl: '/'  # Set the baseurl to '/' to serve documentation from the root
+
 sphinx:
   # extra_extensions:
   #   - sphinx_tabs.tabs
   # local_extensions:
   #   my_module: docs/helper_functions/helper_functions.py
+  builder: html
+  local_build: '_build/html'
   config:
     # Additional Sphinx configuration
     # inline_code_highlight: "true"
@@ -122,7 +122,9 @@ sphinx:
       - css/syft.css
     html_js_files:
       - js/initialize.js
+    html_baseurl: '/'
     html_theme_options:
+      path_to_docs: 'docs'
       # google_analytics_id: 'G-G57FLM9M46'
       # home_page_in_toc: true
       home_page_in_toc: False

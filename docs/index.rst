@@ -23,7 +23,7 @@ Book, however, just like the Sphinx Book Theme, itself.
 
    <span class="d-flex justify-content-center py-4">
      <a href="about.html" role="button" class="btn btn-light btn-lg">
-       Read more about the Sphinx Pythia Theme
+       Read more about the OpenMined Syft Documentation
      </a>
    </span>
 

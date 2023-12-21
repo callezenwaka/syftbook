@@ -1,7 +1,7 @@
-About the Sphinx Pythia Theme
+About the OpenMined Syft Documentation
 =============================
 
-The Sphinx Pythia Theme is a `Sphinx Theme <https://www.sphinx-doc.org/en/master/usage/theming.html>`_
+The OpenMined Syft Documentation is a `Sphinx Theme <https://www.sphinx-doc.org/en/master/usage/theming.html>`_
 that inherits directly from the `Sphinx Book Theme <https://sphinx-book-theme.readthedocs.io/en/latest/>`_
 used by the amazing `Jupyter Book project <https://jupyterbook.org/intro.html>`_.  As a result, the
 Sphinx Pythia Theme, through the Sphinx Book Theme, inherits from the awesome
@@ -312,7 +312,7 @@ padding nor the ability to declare banner backgrounds to the sections.
 Custom Templates
 ----------------
 
-The Sphinx Pythia Theme uses certain custom templates to define how the content in certain
+The OpenMined Syft Documentation uses certain custom templates to define how the content in certain
 sections of the page will display.  For the links in the top navigation bar, the ``navbar-menu.html``
 template is used.  For how to define *banner* and *standalone* page layouts, the ``page-banner.html``
 and the ``page-standalone.html`` templates are used.  For footer content, the ``footer-logos.html``,
