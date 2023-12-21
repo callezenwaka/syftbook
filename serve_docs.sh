@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export -f serve_docs
+
 function serve_docs() {
   jupyter-book build docs/
   cd docs/_build/html
