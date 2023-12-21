@@ -1,8 +1,7 @@
 NOTES.md
-constant.js
+constants.js
 docs/_build
 *.csv
 output/
 conf.py
-# docs/_src
-# docs/__pycache__
+docs/__pycache__
