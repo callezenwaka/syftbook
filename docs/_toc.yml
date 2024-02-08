@@ -46,3 +46,5 @@ parts:
     # - file: syft/part-2
     # - file: syft/part-3
     # - file: syft/syft
+    # - file: syft/L0_pysyft_in_10_minutes
+    # - file: syft/part2_inspecting_datasets

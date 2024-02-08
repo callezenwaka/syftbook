@@ -25,13 +25,13 @@ cd ..
 Make script executable
 
 ```bash
-chmod +x serve_docs.py
+chmod +x serve_docs.sh
 ```
 
 Run the script:
 
 ```bash
-./serve_docs.py
+./serve_docs.sh
 ```
 
 ## For windows

@@ -3,7 +3,7 @@ matplotlib
 numpy
 pandas
 pythia-datasets
-sphinx-syft-theme
+sphinx-syft-theme==0.1.8a1
 sphinx
 syft==0.8.3
 gdown
