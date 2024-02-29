@@ -61,13 +61,14 @@ Documentation
    Together, these enable flexible model definitions and fast battery simulations, allowing users to
    explore the effect of different battery designs and modeling assumptions under a variety of operating scenarios.
 
-.. grid:: 2
+.. grid:: 1 2 3 3
+   :gutter: 2
 
    .. grid-item-card::
       :img-top: _images/index-images/getting_started.svg
 
       Installation
-      ^^^^^^^^^^^^
+      ^^^
 
       The user guide is the best place to start learning PyBaMM. It contains an installation
       guide, an introduction to the main concepts and links to additional tutorials.
@@ -85,7 +86,7 @@ Documentation
       :img-top: _images/index-images/api.svg
 
       Deployment
-      ^^^^^^^^^^
+      ^^^
 
       Examples and tutorials can be viewed on the GitHub examples page,
       which also provides a link to run them online through Google Colab.
@@ -103,7 +104,7 @@ Documentation
       :img-top: _images/index-images/examples.svg
 
       Tutorials
-      ^^^^^^^^^
+      ^^^
 
       The reference guide contains a detailed description of the functions,
       modules, and objects included in PyBaMM. The reference describes how the
@@ -122,7 +123,7 @@ Documentation
       :img-top: _images/index-images/contributor.svg
 
       Contributor's Guide
-      ^^^^^^^^^^^^^^^^^^^
+      ^^^
 
       Contributions to PyBaMM and its development are welcome! If you have ideas for
       features, bug fixes, models, spatial methods, or solvers, we would love to hear from you.

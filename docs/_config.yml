@@ -75,7 +75,7 @@ bibtex_bibfiles:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  baseurl: '/'
+  # baseurl: '/'
 #   favicon: images/icons/favicon.ico
 #   google_analytics_id: 'G-G57FLM9M46'
   home_page_in_navbar: false
@@ -94,7 +94,7 @@ html:
 #     under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY 4.0 (CC BY 4.0)</a>.
 
 # Sphinx HTML options
-html_baseurl: '/'  # Set the baseurl to '/' to serve documentation from the root
+# html_baseurl: '/'  # Set the baseurl to '/' to serve documentation from the root
 
 sphinx:
   # extra_extensions:
@@ -102,7 +102,7 @@ sphinx:
   # local_extensions:
   #   my_module: docs/helper_functions/helper_functions.py
   builder: html
-  local_build: '_build/html'
+  # local_build: '_build/html'
   config:
     # Additional Sphinx configuration
     # inline_code_highlight: "true"
@@ -123,7 +123,7 @@ sphinx:
       - css/syft.css
     # html_js_files:
     #   - js/initialize.js
-    html_baseurl: '/'
+    # html_baseurl: '/'
     html_theme_options:
       path_to_docs: 'docs'
       # google_analytics_id: 'G-G57FLM9M46'
@@ -149,24 +149,25 @@ sphinx:
       # logo_link: https://syftbook.readthedocs.io/
       # logo: _images/logo-dark.svg
       logo:
-        image_light: _images/logo.svg
-        text: OpenMined # Uncomment to try text with logo
+        image_light: _images/logo-light.svg
+        # text: OpenMined # Uncomment to try text with logo
         # image_dark: _images/logo-light.svg
       navbar_links:
         - name: Home
-          url: /index.html
+          url: index.html
         - name: Getting Started
-          url: /installations/overview.html
+          url: installations/overview.html
         - name: Deployment
-          url: /deployments/overview.html
+          url: deployments/overview.html
         - name: Tutorials
-          url: /tutorials/overview.html
-        - name: Padawan
-          url: /padawan/overview.html
-        - name: Contribute
-          url: /syft/overview.html
-        # - name: Blog
-        #   url: https://blog.openmined.org
+          url: tutorials/overview.html
+        - name: Syft
+          url: syft/overview.html
+      icon_links:
+        - name: Blog
+          url: https://blog.openmined.org
+          icon: _static/openmined.ico
+          type: url
     html_sidebars:
       index: []
     #   '**':
