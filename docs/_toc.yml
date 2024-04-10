@@ -6,18 +6,21 @@ root: index
 parts:
   - chapters:
     - file: about
-    - file: overview
+    # - file: overview
     # - file: standalone
-  - caption: Getting Started
-    chapters:
-    - file: deployments/overview
-  - caption: Installation
-    chapters:
-    - file: installations/overview
-  - caption: Tutorials
-    chapters:
-    - file: tutorials/overview
   - caption: Deployment
     chapters:
-    - file: syft/overview
+    - file: pages/deployments/overview
+  - caption: Installation
+    chapters:
+    - file: pages/installations/overview
+  - caption: Tutorials
+    chapters:
+    - file: pages/tutorials/overview
+  - caption: Deployment
+    chapters:
+    - file: pages/syft/overview
     # - file: syft/syft
+  - caption: Python
+    chapters:
+    - file: python

@@ -75,7 +75,7 @@ Documentation
 
       +++
 
-      .. button-ref:: installations/overview
+      .. button-ref:: pages/installations/overview
          :expand:
          :color: secondary
          :click-parent:
@@ -93,7 +93,7 @@ Documentation
 
       +++
 
-      .. button-ref:: deployments/overview
+      .. button-ref:: pages/deployments/overview
          :expand:
          :color: secondary
          :click-parent:
@@ -112,7 +112,7 @@ Documentation
 
       +++
 
-      .. button-ref:: tutorials/overview
+      .. button-ref:: pages/tutorials/overview
          :expand:
          :color: secondary
          :click-parent:
@@ -130,7 +130,7 @@ Documentation
 
       +++
 
-      .. button-link:: syft/overview
+      .. button-link:: pages/syft/overview
          :expand:
          :color: secondary
          :click-parent:

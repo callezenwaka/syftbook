@@ -1,5 +1,5 @@
-About the OpenMined Syft Documentation
-======================================
+About the OpenMined Syft
+========================
 
 The OpenMined Syft Documentation is a `Sphinx Theme <https://www.sphinx-doc.org/en/master/usage/theming.html>`_
 that inherits directly from the `Sphinx Book Theme <https://sphinx-book-theme.readthedocs.io/en/latest/>`_

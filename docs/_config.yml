@@ -5,7 +5,7 @@ title: Syft Documentation
 logo: _images/logo.svg
 author: The Openmined Community
 copyright: "2023"  # Copyright year to be placed in the footer
-email: info@openmined.org
+email: info@syftbook.org
 description: This is a differential privacy toolkit. # Short description about the book
 
 only_build_toc_files: true
@@ -24,7 +24,7 @@ execute:
   - CONTRIBUTING.md
   - NOTES.md
   - serve_docs.sh
-  - initialize.js
+  # - initialize.js
 
 #######################################################################################
 # Parse and render settings
@@ -62,15 +62,16 @@ bibtex_bibfiles:
 #      https://github.com/callezenwaka/sphinx-syft-theme/issues/1588
 
 # Information about where the book exists on the web
-# repository:
-#   url: https://github.com/callezenwaka/sphinx-syft-theme # Online location of your book
-#   #path_to_book: docs  # Optional path to your book, relative to the repository root
-#   branch: main # Which branch of the repository should be used when creating links (optional)
+repository:
+  url: https://github.com/callezenwaka/syftbook # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: main # Which branch of the repository should be used when creating links (optional)
 
 # Configure your Binder links, such as the URL of the BinderHub.
 # launch_buttons:
-#   binderhub_url: https://mybinder.org
-#   notebook_interface: jupyterlab
+#   jupyterhub_url: "https://my-jupyterhub.example.com"
+#   binderhub_url: "https://mybinder.org"
+#   thebe: true
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
@@ -116,11 +117,17 @@ sphinx:
     html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_syft_theme
     html_permalinks_icon: '<i class="fas fa-link"></i>'
+    # launch_buttons:
+    #   # binderhub_url: https://binder.openmined.org
+    #   binderhub_url: "https://mybinder.org"
+    #   colab_url: "https://colab.research.google.com"
+    #   notebook_interface: jupyterlab
+    #   thebe: true
     html_static_path:
-      - _static
+      # - _static
       - _images
-    html_css_files:
-      - css/syft.css
+    # html_css_files:
+      # - css/syft.css
     # html_js_files:
     #   - js/initialize.js
     # html_baseurl: '/'
@@ -134,16 +141,14 @@ sphinx:
       # use_issues_button: true
       # use_repository_button: true
       # use_edit_page_button: true
-      # github_url: https://github.com/callezenwaka/sphinx-syft-theme
-      # twitter_url: https://twitter.com/project_pythia
-      # icon_links:
-      #   - name: YouTube
-      #     url: https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw
-      #     icon: fab fa-youtube-square
-      #     type: fontawesome
-      # launch_buttons:
-      #   binderhub_url: https://binder.openmined.org
-      #   notebook_interface: jupyterlab
+      github_url: https://github.com/callezenwaka/syftbook
+      twitter_url: https://twitter.com/syftbook
+      launch_buttons:
+        # binderhub_url: https://binder.openmined.org
+        binderhub_url: "https://mybinder.org"
+        colab_url: "https://colab.research.google.com"
+        notebook_interface: jupyterlab
+        thebe: true
       # extra_navbar: |
       #   We want your feedback! See our <a href="https://callezenwaka/sphinx-syft-theme/how-to-contribute.html">Contributor's Guide</a>.
       # logo_link: https://syftbook.readthedocs.io/
@@ -156,18 +161,22 @@ sphinx:
         - name: Home
           url: index.html
         - name: Getting Started
-          url: installations/overview.html
+          url: /pages/installations/overview.html
         - name: Deployment
-          url: deployments/overview.html
+          url: /pages/deployments/overview.html
         - name: Tutorials
-          url: tutorials/overview.html
+          url: /pages/tutorials/overview.html
         - name: Syft
-          url: syft/overview.html
+          url: /pages/syft/overview.html
       icon_links:
         - name: Blog
           url: https://blog.openmined.org
           icon: _static/openmined.ico
-          type: url
+          type: local
+        # - name: YouTube
+        #   url: https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw
+        #   icon: fab fa-youtube-square
+        #   type: fontawesome
     html_sidebars:
       index: []
     #   '**':
@@ -182,6 +191,7 @@ sphinx:
     # - sphinx_click.ext
     # - sphinx_tabs.tabs
     - sphinx_inline_tabs
+    - sphinx_book_theme
     # - sphinx.ext.autodoc
     # - sphinx.ext.intersphinx
     # - sphinxcontrib.bibtex
