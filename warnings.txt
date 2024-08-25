@@ -1,0 +1,19 @@
+WARNING: while setting up extension sphinx_syft_theme: extension 'sphinx_syft_theme' has no setup() function; is it really a Sphinx extension module?
+
+Traceback (most recent call last):
+  File "/Users/callisezenwaka/Documents/projects/openmined/syftbook/.tox/docs-live/lib/python3.10/site-packages/sphinx/cmd/build.py", line 332, in build_main
+    app = Sphinx(args.sourcedir, args.confdir, args.outputdir,
+  File "/Users/callisezenwaka/Documents/projects/openmined/syftbook/.tox/docs-live/lib/python3.10/site-packages/sphinx/application.py", line 292, in __init__
+    self._init_builder()
+  File "/Users/callisezenwaka/Documents/projects/openmined/syftbook/.tox/docs-live/lib/python3.10/site-packages/sphinx/application.py", line 365, in _init_builder
+    self.builder.init()
+  File "/Users/callisezenwaka/Documents/projects/openmined/syftbook/.tox/docs-live/lib/python3.10/site-packages/sphinx/builders/html/__init__.py", line 235, in init
+    self.init_templates()
+  File "/Users/callisezenwaka/Documents/projects/openmined/syftbook/.tox/docs-live/lib/python3.10/site-packages/sphinx/builders/html/__init__.py", line 285, in init_templates
+    self.theme = theme_factory.create(theme_name)
+  File "/Users/callisezenwaka/Documents/projects/openmined/syftbook/.tox/docs-live/lib/python3.10/site-packages/sphinx/theming.py", line 236, in create
+    raise ThemeError(__('no theme named %r found (missing theme.toml?)') % name)
+sphinx.errors.ThemeError: no theme named 'sphinx_syft_theme' found (missing theme.toml?)
+
+Theme error:
+no theme named 'sphinx_syft_theme' found (missing theme.toml?)

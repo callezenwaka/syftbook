@@ -1,0 +1,36 @@
+# requirement.txt
+
+# install prod pachages
+ablog
+gdown
+ipykernel
+jupyter_sphinx
+jupyterlite-sphinx
+matplotlib  # For social media cards
+myst-parser[linkify]
+myst-nb
+nbsphinx
+numpy
+numpydoc
+pandas
+sphinx-syft-theme # So we can try out new changes in our docs
+sphinx
+sphinx_click
+sphinx_comments
+sphinx-copybutton
+sphinx-design
+sphinx_external_toc
+sphinx-favicon
+sphinx-inline-tabs
+sphinx-sitemap
+sphinx_thebe
+sphinx-togglebutton
+sphinxext-opengraph
+sphinxext-rediraffe
+sphinxcontrib-bibtex
+sphinxcontrib-youtube
+syft
+
+# install local packages @dev
+# -e /Users/username/Documents/path/sphinx-syft-theme
+# -e /Users/username/Documents/projects/folder/sphinx-syft-theme

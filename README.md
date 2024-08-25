@@ -1,60 +1,26 @@
 # Syft Documentation Guide
 
-## Set up environment
-Clone repository
-```
-git clone <repo_url>
-```
+To build the documentation the easiest thing to do is to use `tox`.
+This will automatically install the environment needed for the documentation each time you build it.
 
-Change directory
-```
-cd docs
-```
+## Build the documentation
 
-Install dependencies
-```
-pip install -r requirements.txt
+Install `tox` with:
 
 ```
-
-## For Linux/Mac
-Change directory
-```
-cd ..
-```
-Make script executable
-
-```bash
-chmod +x serve_docs.sh
+pip install tox
 ```
 
-Run the script:
+then navigate to `meta/` and run the following:
 
-```bash
-./serve_docs.sh
 ```
-
-## For windows
-Serve the Documentation:
-
-Change directory
-```
-cd docs
+tox -e docs-update
 ```
 
-Run the following command to build
-```
-jupyter-book build .
-```
+this will install the necessary environment the first time, then build the documentation for you.
 
-Serve the documentation
-```
-cd _build/html
-python -m http.server
-```
+## Preview live documentation
 
-Remember to rebuild whenever a change is made to content
 ```
-jupyter-book build .
-
+tox -e docs-live
 ```

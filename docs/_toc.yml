@@ -5,22 +5,15 @@ format: jb-book
 root: index
 parts:
   - chapters:
-    - file: about
-    # - file: overview
-    # - file: standalone
-  - caption: Deployment
+      - file: standalone
+  - caption: Tools
     chapters:
-    - file: pages/deployments/overview
-  - caption: Installation
+      - file: tools/python
+      - file: tools/numpy
+      - file: tools/pandas
+  - caption: Syft
     chapters:
-    - file: pages/installations/overview
-  - caption: Tutorials
+      - file: syft/syft
+  - caption: Contribute
     chapters:
-    - file: pages/tutorials/overview
-  - caption: Deployment
-    chapters:
-    - file: pages/syft/overview
-    # - file: syft/syft
-  - caption: Python
-    chapters:
-    - file: python
+      - file: contribute/contribute
