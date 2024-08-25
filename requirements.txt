@@ -13,7 +13,7 @@ nbsphinx
 numpy
 numpydoc
 pandas
-sphinx-syft-theme # So we can try out new changes in our docs
+# sphinx-syft-theme # So we can try out new changes in our docs
 -e git+https://github.com/callezenwaka/sphinx-syft-theme.git#egg=sphinx_syft_theme
 sphinx
 sphinx_click
