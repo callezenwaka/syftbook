@@ -1,7 +1,0 @@
-{
-  "liveServer.settings.port": 5503,
-  "python.analysis.extraPaths": [
-    "./docs/_src",
-    "./docs/module"
-  ]
-}

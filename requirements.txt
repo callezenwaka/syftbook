@@ -14,6 +14,7 @@ numpy
 numpydoc
 pandas
 sphinx-syft-theme # So we can try out new changes in our docs
+-e git+https://github.com/callezenwaka/sphinx-syft-theme.git#egg=sphinx_syft_theme
 sphinx
 sphinx_click
 sphinx_comments
@@ -33,4 +34,3 @@ syft
 
 # install local packages @dev
 # -e /Users/username/Documents/path/sphinx-syft-theme
-# -e /Users/username/Documents/projects/folder/sphinx-syft-theme

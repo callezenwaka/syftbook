@@ -6,8 +6,10 @@ docs/.DS_Store
 *.csv
 output/
 
-# 
+# remove .DS_Store folders
 .DS_Store
+docs/.DS_Store
+tests/.DS_Store
 
 _build
 *.ipynb_checkpoints

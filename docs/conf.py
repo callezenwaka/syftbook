@@ -16,9 +16,6 @@ from sphinx.locale import _
 from datetime import datetime
 from sphinx.util import logging
 
-# from sphinx_syft_theme import __version__
-__version__ = "0.0.0"
-
 LOGGER = logging.getLogger("conf")
 
 # Get the current year
@@ -45,11 +42,6 @@ extensions = [
     "sphinxext.rediraffe",
     "sphinx_design",
     "sphinx_copybutton",
-    # "autoapi.extension",
-    # custom extentions
-    # "_extension.gallery_directive",
-    # "_extension.component_directive",
-    # For extension examples and demos
     "myst_parser",
     "ablog",
     "jupyter_sphinx",
@@ -67,12 +59,12 @@ extensions = [
     "sphinx_thebe",
     "sphinxcontrib.bibtex",
     "sphinxext.opengraph",
+    # "sphinx_syft_theme"
 ]
 
 # -- MyST options ------------------------------------------------------------
 
 # This allows us to use ::: to denote directives, useful for admonitions
-# myst_enable_extensions = ["colon_fence", "linkify", "substitution"]
 myst_enable_extensions = [
     "amsmath",
     "colon_fence",
@@ -220,34 +212,12 @@ todo_include_todos = True
 external_toc_path = "_toc.yml"  # optional, default: _toc.yml
 external_toc_exclude_missing = False  # optional, default: False
 
-# Define the json_url for our version switcher.
-json_url = "https://sphinx-syft-theme.readthedocs.io/en/latest/_static/switcher.json"
-
-# # Define the version we use for matching in the version switcher.
-# version_match = os.environ.get("READTHEDOCS_VERSION")
-# release = sphinx_syft_theme.__version__
-# # If READTHEDOCS_VERSION doesn't exist, we're not on RTD
-# # If it is an integer, we're in a PR build and the version isn't correct.
-# # If it's "latest" → change to "dev" (that's what we want the switcher to call it)
-# if not version_match or version_match.isdigit() or version_match == "latest":
-#     # For local development, infer the version to match from the package.
-#     if "dev" in release or "rc" in release:
-#         version_match = "dev"
-#         # We want to keep the relative reference if we are in dev mode
-#         # but we want the whole url if we are effectively in a released version
-#         json_url = "_static/switcher.json"
-#     else:
-#         version_match = f"v{release}"
-# elif version_match == "stable":
-#     version_match = f"v{release}"
-
-#
+# Theme options
 html_theme_options = {
     "analytics": {
         "plausiable__analytics_domain": "foo",
         "plausible__analytics_url": '<script defer="defer"> data-domain=toto src=http://.../script.js </script>,',
     },
-    # "navbar_center": ["navbar-menu"],
     "header_links_before_dropdown": 4,
     "navbar_links": [
         {"name": "Documentation", "url": "index"},
@@ -299,29 +269,13 @@ html_theme_options = {
     "show_toc_level": 3,
     "show_nav_level": 3,
     "navbar_align": "content",  # [left, content, right] For testing that the navbar items align properly
-    "announcement": f"⚠️This is an experimental release <a href='https://pypi.org/project/sphinx-syft-theme/{__version__}/' target='_blank'>sphinx-syft-theme</a> ⚠️",
+    "announcement": "⚠️ This is an experimental release ⚠️",
     "show_version_warning_banner": True,
-    # "navbar_center": ["version-switcher", "navbar-nav"],
-    # "navbar_start": ["navbar-logo"],
-    # "navbar_end": ["theme-switcher", "navbar-icon-links"],
-    # "navbar_persistent": ["search-button"],
-    # "primary_sidebar_end": ["custom-template", "sidebar-ethical-ads"],
-    # "article_footer_items": ["test", "test"],
-    # "content_footer_items": ["test", "test"],
-    # "footer_start": ["copyright"],
-    # "footer_center": ["sphinx-version"],
-    # "secondary_sidebar_items": ["page-toc", "edit-this-page", "sourcelink"],
     "secondary_sidebar_items": {
         "**": ["page-toc", "edit-this-page", "sourcelink"],
         # "**/*": ["page-toc", "edit-this-page", "sourcelink"],
-        # "examples/no-sidebar": [],
         "standalone": [],
     },
-    # "switcher": {
-    #     "json_url": json_url,
-    #     "version_match": version_match,
-    # },
-    # "back_to_top_button": False,
     "custom_shortcode_to_image": {
         "|:persona:|": "/_static/images/persona.png",
     },
